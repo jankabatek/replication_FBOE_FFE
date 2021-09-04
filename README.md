@@ -57,9 +57,9 @@ Please note that the code automatically downloads the synthetic dataset from our
 
 ## 3. Model illustration in SPSS
 
-The SPSS script (FBOE_FFE_synthetic_data.sps) uses the same [synthetic dataset] to estimate several specifications of the model. Also in this case, the code automatically downloads the synthetic dataset from our online repository, so there is no need to locate or download the dataset before running the code.
+The SPSS script (FBOE_FFE_synthetic_data.sps) uses the same [synthetic dataset](https://www.jankabatek.com/datasets/FBOE_FFE_pseudo_data.csv) to estimate several specifications of the model. Also in this case, the code automatically downloads the synthetic dataset from our online repository, so there is no need to locate or download the dataset before running the code.
 
-The script is constrained to the bare essentials, because SPSS is more restrictive software than other commonly-used statistical packages. The key limitation is that **SPSS does not allow for testing of composite coefficients**. The most tractable way to test these composites is to re-arrange the model specification so that the tested coefficient appears directly in the regression equation. 
+The script is constrained to bare essentials, because SPSS is more restrictive software than other commonly-used statistical packages. The key limitation is that **SPSS does not allow for testing of composite coefficients**. The most tractable way to test these composites is to re-arrange the model specification so that the tested coefficient appears directly in the regression equation. 
 
 This is again illustrated on the example of the FBOE coefficient akin to [Blanchard & Lippa (2021)](https://pubmed.ncbi.nlm.nih.gov/33025292/). To test its statistical significance, we have to estimate an adjusted version of our preferred model specification with numbers of brothers replaced by numbers of sisters:
 
