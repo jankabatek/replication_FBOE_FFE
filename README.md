@@ -1,10 +1,12 @@
 # Replication code for Ablaza, Kabatek &amp; Perales, JSR forth.
-                                                                             
-This replication package contains three sets of codes: 
-1. STATA code replicating the full analysis that draws on proprietary data provided by Statistics Netherlands (STATNL) 
+
+![FBOE_FFE](https://www.jankabatek.com/img/Figure_FBOE_FFE.png)
+
+**This replication package contains three sets of codes:**
+1. STATA code replicating the full analysis that draws on **proprietary data** provided by Statistics Netherlands (STATNL).
 2. Simple STATA code that uses a **synthetic dataset** to illustrate the mechanics of our model, demonstrate its relation to the conventional FBOE model, and provide an example of statistical inference for composite coefficient estimates.
 3. Even simpler SPSS code that does the fundamentals of 2.
-
+ 
 --- 
 
 ## 1. Full analysis in Stata
