@@ -13,7 +13,7 @@
 
 The first Stata code (FBOE_FFE_STATNL.do) documents complete data generation, model estimation, and result extraction workflows corresponding to our empirical analysis that draws on proprietary administrative data provided by STATNL. The proprietary nature of the the data means that **the administrative dataset is not supplied in this replication package**. The only way to get access to the raw data is to [secure the necessary funding and start a new research project at Statistics Netherlands](https://www.cbs.nl/en-gb/onze-diensten/customised-services-microdata/microdata-conducting-your-own-research). Inquiries regarding data access should be addressed to [microdata@cbs.nl](mailto:microdata@cbs.nl). 
  
-The code for the STATNL analysis was written and executed in STATA 16.0, OS Windows 10. **Note that you will need Stata 16.0 and higher in order to execute this code**, otherwise you will have to adjust the code and remove all frame commands (used for the generation of figures and output).  All supplementary packages are provided with the code.       
+The code for the STATNL analysis was written and executed in STATA 16.0, OS Windows 10. **Note that you will need Stata 16.0 and higher in order to execute this code**, otherwise you will have to adjust the code and remove all 'frame' commands (frames are used for generating figures and output). All supplementary packages are provided with the code.       
 
 To execute the code with proprietary STATNL data, make sure that you have access to the following datasets: 
                        
