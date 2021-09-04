@@ -11,9 +11,9 @@
 
 ## 1. Full analysis in Stata
 
-The first Stata code (FBOE_FFE_STATNL.do) contains the complete data generation and model estimation processes corresponding to our empirical analysis drawing on proprietary administrative data provided by STATNL. The proprietary nature of the the data means that **the administrative dataset is not supplied in this replication package**. The only way to get access to the raw data is to [secure the necessary funding and start a new research project at Statistics Netherlands](https://www.cbs.nl/en-gb/onze-diensten/customised-services-microdata/microdata-conducting-your-own-research). Inquiries regarding data access should be addressed to [microdata@cbs.nl](mailto:microdata@cbs.nl). 
+The first Stata code (FBOE_FFE_STATNL.do) documents complete data generation, model estimation, and result extraction workflows corresponding to our empirical analysis that draws on proprietary administrative data provided by STATNL. The proprietary nature of the the data means that **the administrative dataset is not supplied in this replication package**. The only way to get access to the raw data is to [secure the necessary funding and start a new research project at Statistics Netherlands](https://www.cbs.nl/en-gb/onze-diensten/customised-services-microdata/microdata-conducting-your-own-research). Inquiries regarding data access should be addressed to [microdata@cbs.nl](mailto:microdata@cbs.nl). 
  
-The code for the STATNL analysis was written and executed in STATA 16.0, OS Windows 10. **You will need Stata 16.0 and higher in order to execute this code**, otherwise you will have to adjust the code and remove all frame commands (used for the generation of figures and output). All supplementary packages are provided with the code.       
+The code for the STATNL analysis was written and executed in STATA 16.0, OS Windows 10. **Note that you will need Stata 16.0 and higher in order to execute this code**, otherwise you will have to adjust the code and remove all frame commands (used for the generation of figures and output).  All supplementary packages are provided with the code.       
 
 To execute the code with proprietary STATNL data, make sure that you have access to the following datasets: 
                        
@@ -37,12 +37,10 @@ The second Stata code (FBOE_FFE_synthetic_data.do) uses a [synthetic dataset](ht
 <a href="https://www.codecogs.com/eqnedit.php?latex={{{\bf{x'}}}_i}{\bf{\beta&space;}}&space;=&space;{\beta&space;_0}&space;&plus;&space;{\beta&space;_1}N{(sib.)_i}&space;&plus;&space;{\beta&space;_2}N{(older\,sib.)_i}&space;&plus;&space;{\beta&space;_3}N{(older\,br.)_i}&space;&plus;&space;{\beta&space;_4}N{(younger\,br.)_i}," target="_blank"><img src="https://latex.codecogs.com/gif.latex?{{{\bf{x'}}}_i}{\bf{\beta&space;}}&space;=&space;{\beta&space;_0}&space;&plus;&space;{\beta&space;_1}N{(sib.)_i}&space;&plus;&space;{\beta&space;_2}N{(older\,sib.)_i}&space;&plus;&space;{\beta&space;_3}N{(older\,br.)_i}&space;&plus;&space;{\beta&space;_4}N{(younger\,br.)_i}," title="{{{\bf{x'}}}_i}{\bf{\beta }} = {\beta _0} + {\beta _1}N{(sib.)_i} + {\beta _2}N{(older\,sib.)_i} + {\beta _3}N{(older\,br.)_i} + {\beta _4}N{(younger\,br.)_i}," /></a>
  
 and demonstrate its relation to the **conventional FBOE model** and its coefficients, 
-
  
 <p align="center">
 <a href="https://www.codecogs.com/eqnedit.php?latex=P[{Y_i}&space;=&space;1\mid&space;{{\bf{x}}_i},{\bf{\gamma&space;}}]&space;=&space;\frac{1}{{1&space;&plus;&space;\exp&space;(&space;-&space;{{\bf{x'}}_i}{\bf{\gamma&space;}})}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?P[{Y_i}&space;=&space;1\mid&space;{{\bf{x}}_i},{\bf{\gamma&space;}}]&space;=&space;\frac{1}{{1&space;&plus;&space;\exp&space;(&space;-&space;{{\bf{x'}}_i}{\bf{\gamma&space;}})}}" title="P[{Y_i}&space;=&space;1\mid&space;{{\bf{x}}_i},{\bf{\gamma&space;}}]&space;=&space;\frac{1}{{1&space;&plus;&space;\exp&space;(&space;-&space;{{\bf{x'}}_i}{\bf{\gamma&space;}})}}" /></a>
 
- 
 <p align="center">
 <a href="https://www.codecogs.com/eqnedit.php?latex={{{\bf{x'}}}_i}{\bf{\gamma&space;}}&space;=&space;{\gamma&space;_0}&space;&plus;&space;{\gamma&space;_1}N{(older\,br.)_i}&space;&plus;&space;{\gamma&space;_2}N{(older\,sis.)_i}&space;&plus;&space;{\gamma&space;_3}N{(younger\,br.)_i}&space;&plus;&space;{\gamma&space;_4}N{(younger\,sis.)_i}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?{{{\bf{x'}}}_i}{\bf{\gamma&space;}}&space;=&space;{\gamma&space;_0}&space;&plus;&space;{\gamma&space;_1}N{(older\,br.)_i}&space;&plus;&space;{\gamma&space;_2}N{(older\,sis.)_i}&space;&plus;&space;{\gamma&space;_3}N{(younger\,br.)_i}&space;&plus;&space;{\gamma&space;_4}N{(younger\,sis.)_i}" title="{{{\bf{x'}}}_i}{\bf{\gamma }} = {\gamma _0} + {\gamma _1}N{(older\,br.)_i} + {\gamma _2}N{(older\,sis.)_i} + {\gamma _3}N{(younger\,br.)_i} + {\gamma _4}N{(younger\,sis.)_i}" /></a>
 
@@ -51,7 +49,7 @@ The code also illustrates how to test significance of composite coefficient esti
 <p align="center">
 <a href="https://www.codecogs.com/eqnedit.php?latex={\beta&space;_{comp}}&space;=&space;{\beta&space;_2}&space;&plus;&space;{\beta&space;_3}&space;-&space;{\beta&space;_4}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?{\beta&space;_{comp}}&space;=&space;{\beta&space;_2}&space;&plus;&space;{\beta&space;_3}&space;-&space;{\beta&space;_4}" title="{\beta _{comp}} = {\beta _2} + {\beta _3} - {\beta _4}" /></a>
 
-Please note that the code automatically downloads the synthetic dataset from our online repository. There is no need to locate or download the dataset before running the code. 
+The code written and executed in STATA 16.0, OS Windows 10. Unlike the STATNL code, it will run on any version of Stata. Please note that the code automatically downloads the synthetic dataset from our online repository. There is no need to locate or download the dataset before running the code. 
 
 ---
 
