@@ -55,7 +55,7 @@ The SPSS script (FBOE_FFE_synthetic_data.sps) uses the same [synthetic dataset] 
 
 The script is constrained to the bare essentials, because SPSS is more restrictive software than other commonly-used statistical packages. The key limitation is that **SPSS does not allow for testing of composite coefficients**. The most tractable way to test these composites is to re-arrange the model specification so that the tested coefficient appears directly in the regression equation. 
 
-This is again illustrated on the example of the FBOE coefficient akin to [Blanchard & Lippa, 2021](https://pubmed.ncbi.nlm.nih.gov/33025292/)). To test its statistical significance, we have to estimate an adjusted version of our preferred model specification with numbers of brothers replaced by numbers of sisters:
+This is again illustrated on the example of the FBOE coefficient akin to [Blanchard & Lippa (2021)](https://pubmed.ncbi.nlm.nih.gov/33025292/). To test its statistical significance, we have to estimate an adjusted version of our preferred model specification with numbers of brothers replaced by numbers of sisters:
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=P[{Y_i}&space;=&space;1\mid&space;{{\bf{x}}_i},{\bf{\delta}}]&space;=&space;\frac{1}{{1&space;&plus;&space;\exp&space;(&space;-&space;{{\bf{x}}_i}{\bf{\delta&space;}})}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?P[{Y_i}&space;=&space;1\mid&space;{{\bf{x}}_i},{\bf{\delta}}]&space;=&space;\frac{1}{{1&space;&plus;&space;\exp&space;(&space;-&space;{{\bf{x}}_i}{\bf{\delta&space;}})}}" title="P[{Y_i} = 1\mid {{\bf{x}}_i},{\bf{\delta}}] = \frac{1}{{1 + \exp ( - {{\bf{x}}_i}{\bf{\delta }})}}" /></a>
 
