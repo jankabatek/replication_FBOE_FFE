@@ -49,7 +49,7 @@ The code also illustrates how to test significance of composite coefficient esti
 <p align="center">
 <a href="https://www.codecogs.com/eqnedit.php?latex={\beta&space;_{comp}}&space;=&space;{\beta&space;_2}&space;&plus;&space;{\beta&space;_3}&space;-&space;{\beta&space;_4}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?{\beta&space;_{comp}}&space;=&space;{\beta&space;_2}&space;&plus;&space;{\beta&space;_3}&space;-&space;{\beta&space;_4}" title="{\beta _{comp}} = {\beta _2} + {\beta _3} - {\beta _4}" /></a>
 
-The code written and executed in STATA 16.0, OS Windows 10. Unlike the STATNL code, it will run on any version of Stata. Please note that the code automatically downloads the synthetic dataset from our online repository. There is no need to locate or download the dataset before running the code. 
+The code was written and executed in STATA 16.0, OS Windows 10. Unlike the STATNL code, it will run on any version of Stata. Please note that the code automatically downloads the synthetic dataset from our online repository. There is no need to locate or download the dataset before running the code. 
 
 ---
 
