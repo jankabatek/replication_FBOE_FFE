@@ -28,9 +28,9 @@
 global MAIN_FOL "H:/REPLICATION/FBOE_FFE_Replication"
 global DOFILES 	"${MAIN_FOL}/auxiliary_scripts" 
 global DATA  	"${MAIN_FOL}/data"
-global EST 		"${MAIN_FOL}/est" 
-global LOG 		"${MAIN_FOL}/log" 
-global RES		"${MAIN_FOL}/results" 
+global EST 	"${MAIN_FOL}/est" 
+global LOG 	"${MAIN_FOL}/log" 
+global RES	"${MAIN_FOL}/results" 
 
 cd ${MAIN_FOL} 
 for any auxiliary_scripts data est log results: cap mkdir X
@@ -105,12 +105,12 @@ log using "${LOG}/log_${VERSION}" , replace			// Log file
 		sort rinpersoon AANVANGVERBINTENIS
 		bys rinpersoon (AANVANGVERBINTENIS):  gen byte n1_aux = 1 if _n ==1
 		bys rinpersoon (AANVANGVERBINTENIS):  gen byte N_aux = 1 if _n ==_N
-		bys rinpersoon (AANVANGVERBINTENIS):gegen byte own_min_cpl = min(CPL_TYP)
+		bys rinpersoon (AANVANGVERBINTENIS): egen byte own_min_cpl = min(CPL_TYP)
 		bys rinpersoon (AANVANGVERBINTENIS):  gen byte own_1st_cpl = CPL_TYP[1]
 		bys rinpersoon (AANVANGVERBINTENIS):  gen frst_mar = AANVANGVERBINTENIS[1]
  
-		bys rinpersoon (AANVANGVERBINTENIS):gegen byte SSC_REG = max(ssc_rp_aux) 
-		bys rinpersoon (AANVANGVERBINTENIS):gegen byte SSC_MAR = max(ssc_ma_aux)
+		bys rinpersoon (AANVANGVERBINTENIS): egen byte SSC_REG = max(ssc_rp_aux) 
+		bys rinpersoon (AANVANGVERBINTENIS): egen byte SSC_MAR = max(ssc_ma_aux)
  
 		gen byte SSC = own_min_cpl <2 
 		gen byte SSC_SHMAR = own_min_cpl <2 if own_min_cpl != .
