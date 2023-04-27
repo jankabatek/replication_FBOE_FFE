@@ -1,4 +1,4 @@
-# Replication code for Ablaza, Kabátek &amp; Perales, JSR forth.
+# Replication code for Ablaza, Kabátek &amp; Perales, JSR (2022).
 
 ![FBOE_FFE](https://www.jankabatek.com/img/Figure_FBOE_FFE.png)
 
